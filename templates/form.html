@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Financeiro</title>
+</head>
+<body>
+    <h1>Lançamento Financeiro</h1>
+    <form method="POST">
+        <label>Data:</label><br>
+        <input type="date" name="data" required><br><br>
 
+        <label>Histórico:</label><br>
+        <input type="text" name="historico" required><br><br>
+
+        <label>Valor:</label><br>
+        <input type="number" step="0.01" name="valor" required><br><br>
+
+        <label>Conta:</label><br>
+        <select name="conta" required>
+            <option value="branco">Branco</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+        </select><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
