@@ -1,3 +1,8 @@
-@app.route('/', methods=['GET', 'POST'])
-def form():
-    return "Servidor está funcionando!"
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('form.html')  # nome correto do arquivo HTML
+
