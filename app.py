@@ -34,6 +34,6 @@ def form():
         conn.close()
         return redirect('/')
 
-    return render_template('form.html')
+    return render_templates('form.html')
 
 
