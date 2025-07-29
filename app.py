@@ -1,4 +1,4 @@
-from flask import Flask, render_templates, request, redirect
+from flask import Flask, render_template, request, redirect
 import mysql.connector
 import os
 from dotenv import load_dotenv
@@ -34,6 +34,6 @@ def form():
         conn.close()
         return redirect('/')
 
-    return render_templates('form.html')
+    return render_template('form.html')
 
 
