@@ -16,14 +16,6 @@ def connect_db():
 )
 
 
-
-        
-        host=os.getenv("turntable.proxy.rlwy.net"),
-        user=os.getenv("root"),
-        password=os.getenv("EFETjqtkSYzvRUyZVRkieIMvDXSZcWMa"),
-        database=os.getenv("railway")
-    )
-
 @app.route('/', methods=['GET', 'POST'])
 def form():
     if request.method == 'POST':
