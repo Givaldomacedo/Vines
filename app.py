@@ -35,4 +35,4 @@ def form():
         conn.close()
         return redirect('/')
 
-    return render_template('templates/form.html')
+    return render_template("form.html")
