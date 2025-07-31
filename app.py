@@ -16,13 +16,13 @@ def connect_db():
 )
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=["GET", "POST"])
 def form():
-    if request.method == 'POST':
-        data = request.form['data']
-        historico = request.form['historico']
-        valor = request.form['valor']
-        conta = request.form['conta']
+    if request.method == "POST":
+        data = request.form["data'"]
+        historico = request.form["historico"]
+        valor = request.form["valor"]
+        conta = request.form["conta"]
 
         conn = connect_db()
         cursor = conn.cursor()
