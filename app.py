@@ -9,6 +9,15 @@ app = Flask(__name__)
 
 def connect_db():
     return mysql.connector.connect(
+    host=os.getenv("MYSQL_HOST"),
+    user=os.getenv("MYSQL_USER"),
+    password=os.getenv("MYSQL_PASSWORD"),
+    database=os.getenv("MYSQL_DATABASE")
+)
+
+
+
+        
         host=os.getenv("turntable.proxy.rlwy.net"),
         user=os.getenv("root"),
         password=os.getenv("EFETjqtkSYzvRUyZVRkieIMvDXSZcWMa"),
