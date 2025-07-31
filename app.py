@@ -19,7 +19,7 @@ def connect_db():
 @app.route('/', methods=["GET", "POST"])
 def form():
     if request.method == "POST":
-        data = request.form["data'"]
+        data = request.form["data"]
         historico = request.form["historico"]
         valor = request.form["valor"]
         conta = request.form["conta"]
