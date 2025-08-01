@@ -15,7 +15,6 @@ def connect_db():
     database=os.getenv("MYSQL_DATABASE")
 )
 
-mensagem "teste ok"
 
 @app.route('/', methods=["GET", "POST"])
 def form():
