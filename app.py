@@ -26,10 +26,10 @@ def form():
 
         conn = connect_db()
         cursor = conn.cursor()
-        cursor.execute("""
-            INSERT INTO lancamentos (data, historico, valor, conta)
-            VALUES (%s, %s, %s, %s)
-        """, (data, historico, valor, conta))
+        cursor.execute(
+            "INSERT INTO lancamentos (data, historico, valor, conta) VALUES (%s, %s, %s, %s)",
+            (data, historico, valor, conta)
+        )
         conn.commit()
         cursor.close()
         conn.close()
